@@ -144,7 +144,7 @@ def create_model(config: PretrainConfig, train_metadata: PuzzleDatasetMetadata, 
 
             world_size=world_size
         ),
-        AdamATan2(
+        Adam(
             model.parameters(),
 
             lr=0,  # Needs to be set by scheduler
